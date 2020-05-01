@@ -170,6 +170,7 @@ section {
   display: block;
   border: solid 6px white;
   margin-left: auto;
+  -webkit-transform: rotate(180deg);
 }
 
 /* Knowledge Section */
