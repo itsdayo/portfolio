@@ -17,18 +17,18 @@ html {
 .knowledge,
 .text-hobbies,
 .text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #name-description,
 .title h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 /* header */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url('../imgs/bg.jpg');
+    url("../imgs/bg.jpg");
   height: 85%;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,6 +44,7 @@ html {
   border: solid 6px white;
   margin-left: auto;
   margin-right: auto;
+  height: 200px;
 }
 
 .hero-text {
@@ -57,7 +58,7 @@ html {
 }
 
 #name {
-  font-size: 85px;
+  font-size: 50px;
   margin-bottom: 25px;
 }
 
@@ -75,6 +76,7 @@ hr {
 /* navigation */
 .topnav {
   overflow: hidden;
+  padding-bottom: 35px;
 }
 
 .topnav a {
@@ -355,7 +357,7 @@ section {
 
 input,
 textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   color: #666260;
   background: #fff;
