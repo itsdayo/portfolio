@@ -37,14 +37,14 @@ html {
 }
 
 /* Picture of me */
-#me-image-header {
-  width: 10em;
+#do-image-header {
+  width: 20em;
   border-radius: 50%;
   display: block;
   border: solid 6px white;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 270px;
 }
 
 .hero-text {
@@ -564,7 +564,7 @@ a:-webkit-any-link {
     line-height: 34px;
   }
 
-  #me-image-header {
+  #do-image-header {
     margin-bottom: 15px;
   }
 
@@ -694,8 +694,8 @@ a:-webkit-any-link {
     padding-left: 60px;
   }
 
-  #me-image-header {
-    width: 14em;
+  #do-image-header {
+   
   }
 }
 
@@ -780,7 +780,7 @@ a:-webkit-any-link {
     width: 285px;
   }
 
-  #me-image-header {
+  #do-image-header {
     width: 8em;
   }
 
