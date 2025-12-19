@@ -38,13 +38,13 @@ html {
 
 /* Picture of me */
 #do-image-header {
-  width: 20em;
+  width: 12em;
   border-radius: 50%;
   display: block;
   border: solid 6px white;
   margin-left: auto;
   margin-right: auto;
-  height: 270px;
+  height: 200px;
 }
 
 .hero-text {
