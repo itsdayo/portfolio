@@ -402,9 +402,17 @@ fieldset {
 }
 
 .container-form {
-  width: 500px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 
@@ -644,12 +652,16 @@ a:-webkit-any-link {
 
   /* Contact */
   .contact-input {
-    width: 80%;
-    margin: 10px auto 10px auto;
+    width: calc(100% - 20px); /* Adjusting for padding */
+    margin: 10px auto;
   }
 
   .container-form {
-    width: auto;
+    width: 90%;
+  }
+
+  .form-group label {
+    padding-left: 0;
   }
 
   fieldset {
