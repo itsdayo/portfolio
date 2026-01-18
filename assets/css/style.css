@@ -117,7 +117,7 @@ hr {
 #about,
 #portfolio,
 #contact {
-  background: lightsalmon;
+  background: #D3D3D3;
 }
 
 #knowledge,
@@ -357,28 +357,48 @@ section {
   text-align: center;
 }
 
-input,
-textarea {
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact-input {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #666260;
-  background: #fff;
-  padding: 1em;
-  transition: all 0.3s ease-in-out;
+  color: #333;
+  background: #f8f8f8;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   width: 100%;
-  border-radius: 0;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-input:focus {
+  border-color: #8c43ff;
+  box-shadow: 0 0 5px rgba(140, 67, 255, 0.5);
+  outline: none;
 }
 
 fieldset {
   border: none;
 }
 
-.submit {
+.contact-button {
+  background-color: #8c43ff;
+  color: white;
+  padding: 12px 25px;
   border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   -webkit-appearance: none;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #6f34cc;
 }
 
 .container-form {
@@ -387,10 +407,7 @@ fieldset {
   margin-right: auto;
 }
 
-.submit {
-  width: 90px !important;
-  margin: 10px !important;
-}
+
 
 /* button */
 .button {
@@ -626,9 +643,8 @@ a:-webkit-any-link {
   }
 
   /* Contact */
-  input,
-  textarea {
-    width: 60%;
+  .contact-input {
+    width: 80%;
     margin: 10px auto 10px auto;
   }
 
@@ -640,8 +656,9 @@ a:-webkit-any-link {
     text-align: center;
   }
 
-  .submit {
-    margin: auto !important;
+  .contact-button {
+    margin: 20px auto 0 auto;
+    display: block;
   }
 
   /* About */
