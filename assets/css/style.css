@@ -72,6 +72,7 @@ hr {
   width: 100px;
   margin-left: auto;
   margin-right: auto;
+  border-color: #007bff;
 }
 
 /* navigation */
@@ -112,17 +113,20 @@ hr {
   text-align: center;
   font-size: 30px;
   letter-spacing: 1px;
+  color: #64b5f6;
 }
 
 #about,
 #portfolio,
 #contact {
-  background: #D3D3D3;
+  background: linear-gradient(135deg, #001f3f 0%, #010a1a 100%);
+  color: #e0e0e0;
 }
 
 #knowledge,
 #hobbies {
-  background: #ecf1fc;
+  background: linear-gradient(45deg, #010a1a 0%, #001f3f 100%);
+  color: #e0e0e0;
 }
 
 section {
@@ -192,8 +196,10 @@ section {
 
 .container-item-1-1 div,
 .container-item-2-2 div {
-  background: white;
+  background: rgba(0, 0, 0, 0.4);
   padding: 15px;
+  border: 1px solid #007bff;
+  color: #e0e0e0;
 }
 
 .container-item-1-1-1,
@@ -258,7 +264,7 @@ section {
   opacity: 0;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
-  background-color: rgba(81, 0, 186, 0.801);
+  background: linear-gradient(45deg, rgba(0, 123, 255, 0.9) 0%, rgba(0, 86, 179, 0.9) 100%);
   border-radius: 9px;
   margin: 10px;
   margin-bottom: 14px;
@@ -375,8 +381,8 @@ section {
 }
 
 .contact-input:focus {
-  border-color: #8c43ff;
-  box-shadow: 0 0 5px rgba(140, 67, 255, 0.5);
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
 
@@ -385,7 +391,7 @@ fieldset {
 }
 
 .contact-button {
-  background-color: #8c43ff;
+  background-color: #007bff;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -398,7 +404,7 @@ fieldset {
 }
 
 .contact-button:hover {
-  background-color: #6f34cc;
+  background-color: #0056b3;
 }
 
 .container-form {
@@ -419,7 +425,7 @@ fieldset {
 
 /* button */
 .button {
-  background-color: #8c43ff;
+  background-color: #007bff;
   border: none;
   color: white;
   padding: 10px 15px;
@@ -457,11 +463,11 @@ fieldset {
 .button-border {
   background-color: transparent;
   color: white;
-  border: 2px solid #8c43ff;
+  border: 2px solid #007bff;
 }
 
 .button-border:hover {
-  background-color: #8c43ff;
+  background-color: #007bff;
   color: white;
 }
 
@@ -489,7 +495,7 @@ fieldset {
 }
 
 .footer-link a:hover {
-  color: #8c43ff;
+  color: #007bff;
 }
 
 a:-webkit-any-link {
@@ -571,7 +577,7 @@ a:-webkit-any-link {
 }
 
 .github-link {
-  color: #8c43ff;
+  color: #007bff;
 }
 
 @media only screen and (max-width: 768px) {
