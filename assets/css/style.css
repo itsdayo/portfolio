@@ -15,7 +15,6 @@ html {
 #name,
 .topnav a,
 .knowledge,
-.text-hobbies,
 .text {
   font-family: "Roboto", sans-serif;
 }
@@ -124,7 +123,7 @@ hr {
 }
 
 #knowledge,
-#hobbies {
+#github-activity {
   background: linear-gradient(45deg, #010a1a 0%, #001f3f 100%);
   color: #e0e0e0;
 }
@@ -280,74 +279,50 @@ section {
   opacity: 1;
 }
 
-/* Hobbies */
-.hobbies-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.hobbies-column-1 {
-  flex-wrap: wrap;
-}
-
-.hobbies-items {
-  width: 265px;
-}
-
-.image-hobbies {
-  width: 240px;
-  border-radius: 50%;
-}
-
-.hobbies-item-1,
-.hobbies-item-2,
-.hobbies-item-3,
-.hobbies-item-4 {
-  position: relative;
-}
-
-.overlay-hobbies {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-}
-
-.hobbies-item-1:hover .overlay-hobbies,
-.hobbies-item-2:hover .overlay-hobbies,
-.hobbies-item-3:hover .overlay-hobbies,
-.hobbies-item-4:hover .overlay-hobbies {
-  opacity: 1;
-}
-
-.text-hobbies {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background: #0000008c;
-  padding: 5px 10px;
-  width: 82%;
-}
-
-.hobbies-description,
+/* GitHub Activity */
+.github-description,
 .portfolio-description,
 .contact-description {
   padding-bottom: 50px;
 }
 
-.hobbies-column-1 {
+.github-graph-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 24px;
+  padding: 0 24px;
+}
+
+.github-graph-container > a:first-child {
+  display: block;
+  width: min(100%, 900px);
+}
+
+.github-graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(100, 181, 246, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.github-profile-link {
+  color: #64b5f6;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.github-profile-link:hover,
+.github-profile-link:focus {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Contact */
@@ -532,7 +507,7 @@ a:-webkit-any-link {
 .link-about,
 .link-knowledge,
 .link-portfolio,
-.link-hobbies,
+.link-github,
 .link-contact {
   align-self: center;
   padding-left: 10px;
@@ -636,18 +611,14 @@ a:-webkit-any-link {
     margin-left: 20px;
   }
 
-  /* Hobbies */
-  .text-hobbies {
-    width: 85%;
+  /* GitHub Activity */
+  .github-description {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
-  .image-hobbies {
-    width: 250px;
-    margin-bottom: 15px;
-  }
-
-  .hobbies-items {
-    align-self: center;
+  .github-graph {
+    padding: 12px;
   }
 
   /* Laptop */
@@ -751,7 +722,7 @@ a:-webkit-any-link {
   .link-about,
   .link-knowledge,
   .link-portfolio,
-  .link-hobbies,
+  .link-github,
   .link-contact {
     padding-bottom: 5px;
   }
